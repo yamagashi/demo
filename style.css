@@ -7,7 +7,7 @@ body{
     background-color: #e6e6e6;
 }
 
-<!--ヘッダー開始-->
+/*ヘッダー開始*/
 header {
   width: 100%;
   padding: 15px 4% 10px;
@@ -44,17 +44,32 @@ li {
     font-size: 14px;
 }
 
-<!--メイン開始-->
+/*メイン開始*/
 main h2 {
     position: 0;
-    margin-top: 50px;
+    margin-top: 120px;
+    text-align: center;
 }
 
-main div{
-    position: 0;
-    margin-top:  10px;
-    padding: 120px;
+main h3{
+    border: double 10px #1f1d1d ;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    text-align: center;
 }
+
+main h4 {
+    text-align: center;
+}
+
+main h5 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+/*フッター開始*/
 
 
 
