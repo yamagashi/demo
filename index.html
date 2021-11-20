@@ -1,32 +1,119 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>TAKASHI portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1><a href="/">TAKA NOTES</a></h1>
-    <!--グローバルナビゲーション-->
-    <nav class="pc-nav">
-      <ul>
-         <li><a href="index.html">HOME</a></li>
-         <li><a href="skill.html">SKILL</a></li>
-         <li><a href="works.html">WORKS</a></li>
-      </ul>
-    </nav>
-  </header>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+ 
+    <title>Portfolio</title>
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light text-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Taka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active text-white" aria-current="page" href="#">ホーム</a>
+                <a class="nav-link text-white" href="#">プロフィール</a>
+                <a class="nav-link text-white" href="#">学習内容</a>
+                <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true"></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-  <main> 
-        <h2><img src="image/img-4.jpg" width="1200" height="500"></h2>
-        <h3>自己紹介</h3>
-        <p></p>
-  </main>
+      <main>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/img-1.jpeg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="image/img-3.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="image/img-4.jpg" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <h1>プロフィール</h1>
+            <p>1993年12月15日北海道生まれ、現在27歳。<br>酪農学園大学卒業後、2016年株式会社耕人舎に入社。約3年間倉庫作業員兼店舗販売員を経験し業務の効率化/より良い店舗運営や新人教育に従事していました。<br>
+              そこから部署を異動をし営業に配属され、既存の顧客フォローや新規開拓やイベントスタッフ様々な業務に携わりました。<br>
+              2020年会社が合併したことにより、北海道空港株式会社に入社。部署は店舗販売員として会社に在籍。<br>
+              2021年2月退職後、プログラミングスクールを6ヶ月Javaコースを受講8月をもって修了。現在転職活動中にあります。</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <h3><i class="fab fa-html5"></i>HTML5</h3>
+              <p>独学でprogateや書籍を利用し半年が経過。Github pageではBootstrap4を使用しました。</p>
+            </div>
+          <div class="col-lg-3 col-sm-6">
+              <h3><i class="fab fa-css3-alt"></i>CSS3</h3>
+              <p>独学でprogateや書籍を利用し半年が経過。基礎を重点的に取り組みました。</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <h3><i class="fab fa-java"></i>Java</h3>
+              <p>プログラミングスクールでJavaコース6ヶ月受講。JavaEE(サーブレット/jsp)、フレームワークspring boot(2ヶ月)</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <h3><i class="fab fa-aws"></i>AWS</h3>
+              <p>AWSを使用し、DBシステムを用いたブログシステムを構築。(Wordpress実装)期間2ヶ月。</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <h3><i class="fab fa-linux"></i>Linux</h3>
+              <p>CentOS8を用いて、基本的なコマンドを学習。期間2ヶ月</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <h3>各種ツール</h3>
+              <p>MySQL(MariaDB),Git&Github,Eclipse,VScode,Tera-Term,CentOS</p>
+          </div>
+          </div>
+           <div class="container">
+             <div class="row">
+               <h2>学習した内容を用いた成果物一覧</h2>
+               <p>●AWSを使用しネットワークやサーバー構築をしWordPressを実装<br>※設計手順<br>
+               1.Amazon VPCを使用しネットワークを構築<br><br>2.Amazon EC2を利用しサーバーを構築<br><br>
+               3.構築したサーバーにWebサーバーソフトApacheをインストールしWebサーバーとして構築<br><br>
+               4.インターネットからは見えないプライベートサブネットを作成しDBサーバーを配置しました<br><br>
+               5.プライベートサブネットをネットワークからインターネットに接続出来るようNATを構築<br><br>
+               6.DBを用いたブログシステムの構築(WordPress実装)<br><br>
+               ※何故AWSによる実装を選んだか<br>
+               アプリケーション開発にとって、ネットワークやサーバーなどのインフラを知ることが重要だと思ったからです。
+               インフラを知れば、自分で好きなように開発環境を整えられるようになりますし。また、課題が生じた時に、アプリケーション開発の枠組みから出て、
+               システム全体で対応出来るようになれればいいなと思ったからです。
+               AWSを利用したのは企業側の利用率が高いとネット上で知ったことと純粋に学習してみたい意欲が湧いたからです。<br></p>
+               <p>●顧客管理を目的としたアプリケーションを作成<br>
+                現在の実力としてまだまだ未完成ではありますが、自分なりに試行錯誤しながら作成しているアプリです。デプロイするまでには至っておりません。<br>
+                OS-Windows<br>言語-Java<br>JavaEE-サーブレット/jsp<br>
+                ##各種ツール<br>Eclipse<br>MariaDB<br>Github<br>現在出来ている機能としては、<br>
+                ◆顧客全件一覧表示機能<br>◆新規登録・削除機能(必要な項目を入力しDBへ登録したら全件一覧画面へ還移する)<br>
+                追加実装したい機能は、ログイン機能・商談管理機能・タスク機能等。難しいとは思いますが終わらせるまでが目標です。<br>
+                苦労していることは、エラーが多く解決するのに時間をかけすぎている。 実装したい機能は明確なのにどうやればいいのか知識不足と理解する能力の問題。
+                画面遷移うまくいかず時間をかけた。まだまだ技術面での問題もあるので一つずつ解決していければと思います。<br>今後の課題・目標</p>
+             </div>
+           </div>
+      </div>
+    </main>
 
-  <footer>
-  </footer>
-</body>
+      <footer class="bg-dark text-center">
+        <div class="container">
+          <p class="my-0 text-white py-3">Portfolio　2021</p>
+          <a href="http://github.yamagashi.io/demo"></a>
+        </div>
+      </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
-  
-  
